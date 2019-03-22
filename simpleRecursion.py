@@ -1,23 +1,18 @@
-ez = "56890" 
-counter = int(0)
+ez = "990" 
+iterations = int(1)
 
 
 def simpleRecursion(n, input):
-    ezList2 = []
-    if n == 9: #checking if number of iterations has gotten to 10
-        ez = str("".join(ezList2)) #combining list back to string
-        print(ez)
+    ezList = [str(int(i) +1) for i in input] #creating list from input whilst using a counter and type casting
+    g = int()
+    if ezList[g] == '10': #if number at current index is 10 
+        ezList[g] = '1'
+        ezList.insert(g+1, '0')
     else:
-        ezList = [int(i) for i in input] #creating list from input
-        ezList2 = [y +1 for y in ezList] #creating new list to add to
-        n += 1
-        g = int()
-        while g < len(ezList2): #while counter is less then length of list
-            if ezList2[g] == 10: #if number at current index is 10 
-                ezList2[g] = 1
-                ezList2.insert(g+1, 0)
-            else:
-                g += 1
-        simpleRecursion(n, ezList2) #recursive func
+        ezList[g] = str(int(ezList[g] += 1))
+        g += 1
+    if n != 0:
+        simpleRecursion(n-=1, ezList) #recursive func
+    else:
         return 
-simpleRecursion(counter,ez)
+simpleRecursion(iterations,ez)
