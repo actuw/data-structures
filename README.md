@@ -28,7 +28,7 @@ Beginner
     ---
     
     ###### Description 
-    *Given a positive integer as an input to a function, apply these two different rules to the input; if the input is an even number divide it by 2, if it is an odd number multiply it by 3 and subtract 1. Apply these rules until the number reaches 1. The function must return an array/list of all the numbers in the sequence, so for example if the input is 3 the returned array/list must contain [3, 10, 5, 16, 8, 4, 2, 1].*
+    *Given a positive integer as an input to a function, apply these two different rules to the input; if the input is an even number divide it by 2, if it is an odd number multiply it by 3 and add 1. Apply these rules until the number reaches 1. The function must return an array/list of all the numbers in the sequence, so for example if the input is 3 the returned array/list must contain [3, 10, 5, 16, 8, 4, 2, 1].*
     
     *For this challenge implement two functions one using a loop and the other using recursion. To test your output for different inputs you can visit [dcode](https://www.dcode.fr/collatz-conjecture).* 
     
