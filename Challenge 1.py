@@ -9,7 +9,6 @@ def simpleRecursion(n, input):
         print(output)
         n -= 1
         simpleRecursion(n,output)
-    if n <= 0:
-        print(output)
-        return
+    else
+        return output
 simpleRecursion(iterations,ez)
