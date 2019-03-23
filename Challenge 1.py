@@ -10,5 +10,5 @@ def simpleRecursion(n, input):
         n -= 1
         simpleRecursion(n,output)
     else:
-        return output
+        return input
 simpleRecursion(iterations,ez)
