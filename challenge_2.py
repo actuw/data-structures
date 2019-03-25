@@ -1,10 +1,3 @@
-input = int()
-result = []
-
-def input_odd_or_even_check(input):
-    return
-
-
 def collatz_sequence(input):
     resultList = []
     while input != 1:
@@ -12,9 +5,24 @@ def collatz_sequence(input):
         if input % 2 > 0:
             input = ((3 * input) + 1)
         else:
-            input = (input / 2)    
-    print(str(resultList))
+            input = (input / 2)
+    resultList.append(input)    
+    return resultList
 
-collatz_sequence(30)
+print(collatz_sequence(30))
 
+def collatz_sequence_recursion(input, resultList = None):
+    if resultList is None:
+        resultList = []
+    resultListAlias = resultList
+    resultListAlias.append(input)
+    if input == 1:
+        return resultListAlias
+    if input % 2 > 0:
+        input = ((3 * input) + 1)
+        collatz_sequence_recursion(input,resultListAlias)
+    else:
+        input = (input / 2)
+        collatz_sequence_recursion(input,resultListAlias)
         
+print(collatz_sequence_recursion(7))
