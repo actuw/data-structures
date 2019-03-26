@@ -28,7 +28,7 @@ def collatz_sequence_glide(resultList):
     i = int()
     glideCounter = int()
     while i != len(resultList):
-        if resultList[0] < resultList[i]:
+        if resultList[0] > resultList[i]:
             glideCounter += 1
             i += 1
         else:
@@ -36,4 +36,4 @@ def collatz_sequence_glide(resultList):
     return glideCounter
 print(collatz_sequence_recursion(7))
 
-print(collatz_sequence_recursion_glide(collatz_sequence_recursion(7)))
+print(collatz_sequence_glide(collatz_sequence_recursion(3)))
