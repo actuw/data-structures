@@ -34,6 +34,13 @@ def collatz_sequence_glide(resultList):
         else:
             i +=1
     return glideCounter
-print(collatz_sequence_recursion(7))
 
+#def collatz_sequence_glide_recursion(resultList):
+ #   {
+ #       if (resultList[0] > resultList[i])
+ #   }
+
+
+    
+print(collatz_sequence_recursion(7))
 print(collatz_sequence_glide(collatz_sequence_recursion(3)))
